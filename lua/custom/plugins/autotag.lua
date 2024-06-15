@@ -11,6 +11,6 @@ return {
     'typescriptreact',
   },
   config = function()
-    require('nvim-ts-autotah').setup()
+    require('nvim-ts-autotag').setup()
   end,
 }
