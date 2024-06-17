@@ -1,13 +1,12 @@
 return {
   'stevearc/oil.nvim',
-  opts = {
-    keymaps = {
-      ['<BS>'] = 'actions.parent',
-    },
-  },
+  opts = {},
   dependencies = { 'nvim-tree/nvim-web-devicons' },
   config = function()
     require('oil').setup {
+      keymaps = {
+        ['<BS>'] = 'actions.parent',
+      },
       default_file_explorer = true,
       delete_to_trash = true,
       skip_confirm_for_simple_edits = true,
